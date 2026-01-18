@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  s_api_stock_exchange_ons:
+    container_name: c_api_stock_exchange_ons
+    image: api_stock_exchange_ons
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 8007:5000
